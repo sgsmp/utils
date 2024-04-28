@@ -1,0 +1,4 @@
+name: utils
+version: '${project.version}'
+main: me.guamencja.sgsmp.Utils
+api-version: '1.17'
