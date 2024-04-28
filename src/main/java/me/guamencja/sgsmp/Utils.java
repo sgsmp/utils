@@ -20,6 +20,9 @@ public final class Utils extends JavaPlugin {
         Listener cancelHpRegenEvent = new HpRegen();
         getServer().getPluginManager().registerEvents(cancelHpRegenEvent, this);
         HpRegen.newRegenTask();
+
+        Listener noSleepWhenHungry = new BedEnter();
+        getServer().getPluginManager().registerEvents(noSleepWhenHungry, this);
     }
 
     @Override
