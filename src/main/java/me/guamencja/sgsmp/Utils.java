@@ -23,6 +23,9 @@ public final class Utils extends JavaPlugin {
 
         Listener noSleepWhenHungry = new BedEnter();
         getServer().getPluginManager().registerEvents(noSleepWhenHungry, this);
+
+        Listener nightBlindness = new PlayerMove();
+        getServer().getPluginManager().registerEvents(nightBlindness, this);
     }
 
     @Override
