@@ -21,7 +21,6 @@ public class HpRegen implements Listener {
         }
 
         e.setCancelled(true);
-        Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "EntityRegainHealthEvent canceled");
     }
 
     public static void newRegenTask() {
@@ -31,7 +30,6 @@ public class HpRegen implements Listener {
                 for(final Player p : new ArrayList<>(getServer().getOnlinePlayers())) {
                     final double health = p.getHealth();
                     if (!(health < p.getMaxHealth())) return;
-                    Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "+0.1");
                     p.setHealth(p.getHealth() + 0.5);
                 }
             }
